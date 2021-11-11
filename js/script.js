@@ -13,15 +13,16 @@ const app = new Vue({
             } else {
                 this.counter++;
             }
+            console.log(this.counter);
         },
     
         prevSlide(){
-            if(this.counter < 0){
+            if(this.counter <= 0){
                 this.counter = this.image.lenght - 1;
             } else {
                 this.counter--;
             }
-            console.log(counter);
+            console.log(this.counter);
         }
     }
 })
