@@ -8,19 +8,17 @@ const app = new Vue({
 
     methods:{
         nextSlide(){
+            this.counter++;
             if(this.counter > this.images.length - 1){
                 this.counter = 0;
-            } else {
-                this.counter++;
             }
             console.log(this.counter);
         },
     
         prevSlide(){
+            this.counter--;
             if(this.counter <= 0){
                 this.counter = this.images.length - 1;
-            } else {
-                this.counter--;
             }
             console.log(this.counter);
         }
